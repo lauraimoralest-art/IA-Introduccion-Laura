@@ -1,6 +1,11 @@
-El Problema: Una empresa de transporte de alimentos tiene sensores de temperatura en sus camiones. Algunos fallan por la vibración, dejando huecos (NaN). Debes usar los datos de sensores que están en la misma zona (vecinos) para recuperar la información.
+El Problema: Una flota de camiones transporta alimentos. Debido a la vibración, algunos sensores de temperatura fallan dejando valores nulos (NaN). Debes estimar esos valores usando la información de "sensores vecinos" con condiciones similares.
 
 Misión: Escribe una función llamada reparar_sensores_logistica(df, n_vecinos) que:
-1. Utilice KNNImputer de sklearn para completar los valores NaN.
-2. Use el número de vecinos especificado en n_vecinos.
-3. Devuelva un DataFrame de pandas sin valores nulos, manteniendo las columnas originales.
+
+Utilice KNNImputer de sklearn para completar los valores faltantes en el DataFrame df.
+
+Use el número de vecinos especificado en n_vecinos.
+
+Devuelva un DataFrame de pandas con los datos completos.
+
+A tener en cuenta: Mantén los nombres originales de las columnas.
