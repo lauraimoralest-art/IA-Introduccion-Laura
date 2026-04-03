@@ -1,5 +1,9 @@
-El Problema: Quieres saber si existe una relación entre el tiempo de estudio y la nota final. Como la relación no es una línea recta perfecta, la correlación de Pearson no funciona bien. Debes usar la correlación de Spearman (basada en rangos).
+El Problema: Analizas horas de estudio vs calificación. Los datos muestran que a más horas, mejor nota, pero la relación es exponencial (no lineal). Pearson fallará; debes usar un método basado en rangos.
 
 Misión: Escribe una función llamada analizar_correlacion_rangos(df) que:
-1. Calcule la matriz de correlación de Spearman para todas las columnas numéricas del DataFrame df.
-2. Devuelva un DataFrame de pandas que represente dicha matriz.
+
+Calcule la matriz de correlación de Spearman para todas las variables numéricas.
+
+Devuelva un DataFrame con dicha matriz.
+
+A tener en cuenta: El parámetro del método debe ser 'spearman'.
