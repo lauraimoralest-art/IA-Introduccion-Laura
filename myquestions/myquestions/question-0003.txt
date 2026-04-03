@@ -1,0 +1,12 @@
+Pregunta 0003: Balanceo de Clases mediante Sobremuestreo Aleatorio (pandas + numpy)
+Archivo: question-0003.txt
+
+El Problema: Estás entrenando un modelo para detectar fraudes bancarios. El 99% de las transacciones son legales y solo el 1% son fraude. El modelo aprende a decir siempre "legal" para acertar el 99%. Debes balancear el dataset duplicando aleatoriamente los casos de la clase minoritaria hasta que ambas tengan la misma cantidad.
+
+Misión: Escribe una función llamada balancear_clases_duplicado(df, target_col) que:
+
+Identifique cuál es la clase minoritaria en target_col.
+
+Duplique filas de esa clase (resampling) hasta igualar el número de filas de la clase mayoritaria.
+
+Devuelva el nuevo DataFrame balanceado.
