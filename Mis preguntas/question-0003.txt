@@ -1,9 +1,6 @@
-El Problema: Estás entrenando un modelo para detectar fraudes bancarios. El 99% de las transacciones son legales y solo el 1% son fraude. El modelo aprende a decir siempre "legal" para acertar el 99%. Debes balancear el dataset duplicando aleatoriamente los casos de la clase minoritaria hasta que ambas tengan la misma cantidad.
+El Problema: En un dataset de fraudes bancarios, la clase "Fraude" tiene muy pocos ejemplos. Debes balancear el dataset duplicando aleatoriamente filas de la clase minoritaria.
 
 Misión: Escribe una función llamada balancear_clases_duplicado(df, target_col) que:
-
-Identifique cuál es la clase minoritaria en target_col.
-
-Duplique filas de esa clase (resampling) hasta igualar el número de filas de la clase mayoritaria.
-
-Devuelva el nuevo DataFrame balanceado.
+1. Identifique la clase minoritaria en la columna target_col.
+2. Duplique filas de esa clase (resampling) hasta que tenga la misma cantidad que la clase mayoritaria.
+3. Devuelva el nuevo DataFrame balanceado.
