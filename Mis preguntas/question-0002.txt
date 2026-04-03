@@ -1,6 +1,3 @@
-Pregunta 0002: Imputación de Datos mediante K-Vecinos Cercanos (sklearn + pandas)
-Archivo: question-0002.txt
-
 El Problema: Tienes un dataset médico donde faltan valores de presión arterial. En lugar de usar el promedio simple (que es poco preciso), quieres usar los datos de "pacientes similares" para llenar los huecos.
 
 Misión: Escribe una función llamada imputar_knn_medico(df, n_vecinos) que:
