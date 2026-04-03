@@ -1,6 +1,11 @@
-El Problema: En una aerolínea, el 99% de los vuelos son normales y solo el 1% presenta fallas menores en el motor. Para que un modelo aprenda a detectarlas, debes balancear el dataset duplicando aleatoriamente las filas de la clase minoritaria ("Falla").
+El Problema: En turbinas de avión, las fallas son rarísimas (menos del 1%). Para que un modelo aprenda, debes balancear el dataset duplicando filas de la clase minoritaria ("Falla") hasta igualar a la clase "Normal".
 
 Misión: Escribe una función llamada balancear_fallas_criticas(df, target_col) que:
-1. Identifique la clase minoritaria en la columna target_col.
-2. Duplique filas de esa clase (oversampling) hasta igualar la cantidad de la clase mayoritaria.
-3. Devuelva el DataFrame balanceado resultante.
+
+Identifique la clase minoritaria en la columna target_col.
+
+Realice un sobremuestreo duplicando filas aleatorias de la minoría hasta que ambas clases tengan el mismo tamaño.
+
+Devuelva el DataFrame balanceado.
+
+A tener en cuenta: Usa .sample() con replace=True y random_state=42.
