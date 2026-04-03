@@ -1,6 +1,3 @@
-Pregunta 0004: Cálculo de Correlación de Spearman para Datos no Lineales (pandas)
-Archivo: question-0004.txt
-
 El Problema: Quieres saber si existe una relación entre el tiempo de estudio y la nota final. Sin embargo, la relación no es una línea recta perfecta, sino una curva. La correlación de Pearson falla aquí, por lo que debes usar la de Spearman (basada en rangos).
 
 Misión: Escribe una función llamada analizar_correlacion_rangos(df) que:
