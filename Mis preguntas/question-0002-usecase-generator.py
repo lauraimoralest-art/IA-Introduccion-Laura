@@ -18,7 +18,7 @@ def generar_caso_de_uso_imputar_knn_medico():
     }
     df = pd.DataFrame(data)
     
-    # Introducir NaNs aleatorios en 'presion'
+    # Introducir NaNs aleatorios
     indices_nan = random.sample(range(n_rows), 2)
     df.loc[indices_nan, 'presion'] = np.nan
     
@@ -45,5 +45,4 @@ if __name__ == "__main__":
     print(entrada['df'])
     
     print("\n=== OUTPUT ESPERADO (DataFrame completo) ===")
-    print("DataFrame después de imputación KNN:")
     print(salida_esperada)
