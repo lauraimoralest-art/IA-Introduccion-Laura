@@ -1,7 +1,7 @@
-El Problema: Trabajas en el equipo de seguridad de una red y recibes registros de tráfico. La mayoría es tráfico normal, pero hay ataques ocultos. Debes usar un algoritmo no supervisado para detectar anomalías.
+El Problema: Trabajas en una empresa de energía y monitoreas el consumo diario de los hogares. Has notado picos extraños que podrían indicar fugas técnicas o conexiones ilegales. Como no tienes etiquetas de qué es "robo", debes usar un algoritmo no supervisado.
 
-Misión: Escribe una función llamada detectar_anomalias_red(X, contaminacion) que:
+Misión: Escribe una función llamada detectar_fugas_energia(X, contaminacion) que:
 1. Utilice IsolationForest de sklearn.
 2. El argumento contaminacion (float) define la proporción esperada de anomalías.
-3. Entrene el modelo con la matriz X.
-4. Devuelva un vector de numpy donde -1 indica una anomalía y 1 indica un dato normal.
+3. Entrene el modelo con la matriz X (datos de consumo).
+4. Devuelva un vector de numpy donde -1 indica una fuga/anomalía y 1 un consumo normal.
