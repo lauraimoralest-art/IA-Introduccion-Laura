@@ -1,6 +1,6 @@
-El Problema: Tienes un dataset médico donde faltan valores de presión arterial. Quieres usar los datos de "pacientes similares" para llenar los huecos mediante vecinos cercanos.
+El Problema: Una empresa de transporte de alimentos tiene sensores de temperatura en sus camiones. Algunos fallan por la vibración, dejando huecos (NaN). Debes usar los datos de sensores que están en la misma zona (vecinos) para recuperar la información.
 
-Misión: Escribe una función llamada imputar_knn_medico(df, n_vecinos) que:
+Misión: Escribe una función llamada reparar_sensores_logistica(df, n_vecinos) que:
 1. Utilice KNNImputer de sklearn para completar los valores NaN.
 2. Use el número de vecinos especificado en n_vecinos.
-3. Devuelva un DataFrame de pandas con la misma estructura original, pero sin valores nulos.
+3. Devuelva un DataFrame de pandas sin valores nulos, manteniendo las columnas originales.
