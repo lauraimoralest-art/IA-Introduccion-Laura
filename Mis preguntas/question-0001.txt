@@ -1,11 +1,14 @@
-El Problema: Trabajas en una empresa de servicios públicos monitoreando el consumo eléctrico de miles de hogares. Has detectado que algunos medidores muestran patrones atípicos que no corresponden a un uso residencial normal, lo que podría indicar fugas técnicas o conexiones ilegales. Al no tener datos etiquetados de "robos" previos, debes usar aprendizaje no supervisado.
+EJERCICIO 0001: Fugas de Energía (Anomalías)
+Archivo: myquestions/question-0001.txt
+
+El Problema: Trabajas en una empresa de servicios públicos monitoreando el consumo eléctrico. Has detectado patrones atípicos que no corresponden a un uso residencial normal, lo que podría indicar fugas técnicas o conexiones ilegales. Al no tener datos etiquetados de "robos", debes usar aprendizaje no supervisado.
 
 Misión: Escribe una función llamada detectar_fugas_energia(X, contaminacion) que:
 
-Utilice el algoritmo IsolationForest de la librería sklearn.
+Utilice el algoritmo IsolationForest de sklearn.
 
-Reciba una matriz X con datos de consumo y un parámetro contaminacion (float) que represente la proporción esperada de anomalías.
+Reciba una matriz X con datos de consumo y un parámetro contaminacion (float) con la proporción esperada de anomalías.
 
-Entrene el modelo y devuelva un vector de constantes donde -1 indica una anomalía (fuga) y 1 indica un dato normal.
+Entrene el modelo y devuelva un vector donde -1 indica una anomalía y 1 un dato normal.
 
-A tener en cuenta: Asegúrate de fijar el random_state=42 dentro del modelo para que los resultados sean reproducibles.
+A tener en cuenta: Fija el random_state=42 dentro del modelo.
