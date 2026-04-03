@@ -1,5 +1,8 @@
-# IA-Introduccion-Laura
-Repositorio para la Fase 1 de la materia Introducción a la IA - Generación de casos de uso y preguntas de Machine Learning.
+# Introducción a la Ingeniería de IA - Fase 1
 
-Estudiante: Laura Isabel Morales Toro 
-Correo: laurai.moralest@udea.edu.co
+**Estudiante:** Laura Isabel Morales Toro
+**Institución:** Universidad de Antioquia  
+**Correo:** laurai.moralest@udea.edu.co
+
+## Contenido
+Este repositorio contiene 4 casos de uso diseñados para la evaluación automatizada de habilidades en preprocesamiento de datos y detección de anomalías mediante Python.
