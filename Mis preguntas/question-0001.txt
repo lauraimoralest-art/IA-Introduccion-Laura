@@ -1,7 +1,11 @@
-El Problema: Trabajas en una empresa de energía y monitoreas el consumo diario de los hogares. Has notado picos extraños que podrían indicar fugas técnicas o conexiones ilegales. Como no tienes etiquetas de qué es "robo", debes usar un algoritmo no supervisado.
+El Problema: Trabajas en una empresa de servicios públicos monitoreando el consumo eléctrico de miles de hogares. Has detectado que algunos medidores muestran patrones atípicos que no corresponden a un uso residencial normal, lo que podría indicar fugas técnicas o conexiones ilegales. Al no tener datos etiquetados de "robos" previos, debes usar aprendizaje no supervisado.
 
 Misión: Escribe una función llamada detectar_fugas_energia(X, contaminacion) que:
-1. Utilice IsolationForest de sklearn.
-2. El argumento contaminacion (float) define la proporción esperada de anomalías.
-3. Entrene el modelo con la matriz X (datos de consumo).
-4. Devuelva un vector de numpy donde -1 indica una fuga/anomalía y 1 un consumo normal.
+
+Utilice el algoritmo IsolationForest de la librería sklearn.
+
+Reciba una matriz X con datos de consumo y un parámetro contaminacion (float) que represente la proporción esperada de anomalías.
+
+Entrene el modelo y devuelva un vector de constantes donde -1 indica una anomalía (fuga) y 1 indica un dato normal.
+
+A tener en cuenta: Asegúrate de fijar el random_state=42 dentro del modelo para que los resultados sean reproducibles.
