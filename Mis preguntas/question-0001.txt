@@ -1,6 +1,3 @@
-Pregunta 0001: Detección de Intrusos mediante Isolation Forest (sklearn)
-Archivo: question-0001.txt
-
 El Problema: Trabajas en el equipo de seguridad de una red y recibes registros de tráfico (IPs, puertos, bytes transferidos). La mayoría es tráfico normal, pero hay ataques ocultos. Como no tienes etiquetas de qué es "ataque", debes usar un algoritmo no supervisado para detectar anomalías.
 
 Misión: Escribe una función llamada detectar_anomalias_red(X, contaminacion) que:
