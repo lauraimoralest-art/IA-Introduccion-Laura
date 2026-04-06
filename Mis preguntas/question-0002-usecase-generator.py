@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-from sklearn.impute import KNNImputer
 import random
+from sklearn.impute import KNNImputer
 
 def generar_caso_de_uso_reparar_sensores_logistica():
     """Genera un caso de prueba para imputación de sensores."""
