@@ -1,6 +1,6 @@
 import numpy as np
-from sklearn.ensemble import IsolationForest
 import random
+from sklearn.ensemble import IsolationForest
 
 def generar_caso_de_uso_detectar_fugas_energia():
     """Genera un caso de prueba para detección de anomalías."""
